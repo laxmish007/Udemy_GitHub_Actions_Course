@@ -1,7 +1,7 @@
 name: Output Issue Details workflow
 on:
   issues:
-  types: [opened, edited, reopened]
+    types: [opened, edited, reopened]
 jobs:
   Output issue details job:
     runs-on: ubuntu-latest
