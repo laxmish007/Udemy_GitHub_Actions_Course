@@ -1,0 +1,12 @@
+name: Test and Deploy
+on: issue
+jobs:
+  Output issue details:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Output issue details
+        run: |
+          echo "Issue Number: ${{ github.event.issue.number }}"
+          echo "Issue Title: ${{ github.event.issue.title }}"
+          echo "Issue Body: ${{ github.event.issue.body }}"
+          echo "Issue User: ${{ github.event.issue.user.login }}"
