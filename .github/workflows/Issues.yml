@@ -1,10 +1,12 @@
 name: Output Issue Details workflow
-on: issue
+on:
+  issues:
+  types: [opened, edited, reopened]
 jobs:
   Output issue details job:
     runs-on: ubuntu-latest
     steps:
-      - name: Output issue details step
+      - name: Output issue details
         run: |
           echo "Issue Number: ${{ github.event.issue.number }}"
           echo "Issue Title: ${{ github.event.issue.title }}"
