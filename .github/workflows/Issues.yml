@@ -3,10 +3,10 @@ on:
   issues:
     types: [opened, edited, reopened]
 jobs:
-  Output issue details job:
+  Output_issue_details_job:
     runs-on: ubuntu-latest
     steps:
-      - name: Output issue details
+      - name: Output_issue_details_step
         run: |
           echo "Issue Number: ${{ github.event.issue.number }}"
           echo "Issue Title: ${{ github.event.issue.title }}"
