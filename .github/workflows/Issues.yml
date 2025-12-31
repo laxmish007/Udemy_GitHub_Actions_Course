@@ -1,10 +1,10 @@
-name: Test and Deploy
+name: Output Issue Details workflow
 on: issue
 jobs:
-  Output issue details:
+  Output issue details job:
     runs-on: ubuntu-latest
     steps:
-      - name: Output issue details
+      - name: Output issue details step
         run: |
           echo "Issue Number: ${{ github.event.issue.number }}"
           echo "Issue Title: ${{ github.event.issue.title }}"
