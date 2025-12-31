@@ -12,7 +12,7 @@ jobs:
       - name: Install dependencies
         run: npm install
       - name: Linting the soure files
-        run: npm lint
+        run: npm run lint
 
   test:
     needs: lint
